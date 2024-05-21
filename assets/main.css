@@ -1,0 +1,24 @@
+:root {
+    /*color scheme*/
+    --background: #333;
+    --nav-top: #444;
+    --font-color: white;
+}
+
+#tnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--nav-top);
+    height: 65px;
+    width: 100vw;
+}
+
+
+body {
+    text-align: center;
+    background-color: var(--background);
+    color: var(--font-color);
+    font-family: sans-serif;
+    margin: 0;
+}
