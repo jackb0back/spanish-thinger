@@ -3,12 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>La Casa de Diego</title>
   <link rel="stylesheet" href="assets/main.css">
+  <link rel="icon" href="assets/D.png">
 </head>
-<body>
-  <div id="tnav">
+<body onscroll="resizeTopNav()">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+  
+    <div class="glass" onmouseenter="isHoveringNav = true;resizeTopNav()" onmouseleave="isHoveringNav = false;resizeTopNav()" id="tnav">
+    <h1 id="title" class="logo">La Casa de Diego</h1>
+    <div id="btns">
+        <button class="active" onclick="showNav(this,'home')">Home</button>
+        <button onclick="showNav(this,'menu')">Menu</button>
+     <!--<button onclick="showNav(this,'print')">Printable menu</button>-->
+        <button onclick="showNav(this,'review')">About</button>
+    </div>
   </div>
+
+  <div id="cont">
+      <div class="nav" id="nav-home">
+          <h1>Home</h1>
+          <div class="glass" id="home-cont"><br>
+            <h2 style="margin: 0;">
+            Hola! welcome to Diego's Casa, have a look at our menu. we have a lot to offer! 
+            <br>
+            here at Diego's Casa we have the best and freshest spanish and mexican foods.
+          </h2> 
+          </div>
+      </div>
+      <div class="nav" id="nav-menu">
+          <h1>Menu/Menú</h1>
+          <select onchange="changeCurr()" value="EUR" id="menu-curr">
+            <option value="EUR">--select a currency to convert to--</option>
+          </select>
+          <div id="menu-items">
+
+            <h3>getting current exchange rate...</h3>
+
+        </div>
+      </div>
+      <div class="nav" id="nav-printable">
+        <iframe id="print" src="print.html" frameborder="0"></iframe>
+      </div>
+      <div class="nav" id="nav-rev">
+          <h1>About</h1>
+          <div class="glass" id="about">
+            <h3 style="margin: 10px;">Made by Jackson House</h3>
+            <h5 style="margin: 5px;">Spanish 2 menu project</h5>
+            <a style="color: cyan; font-size: large;" href="javascript:window.open('https://jackboback.dev')">Check out my website!</a>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="main">
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="bubble bubble-5"></div>
+    <div class="bubble bubble-6"></div>
+    <div class="bubble bubble-7"></div>
+    <div class="bubble bubble-8"></div>
+    <div class="bubble bubble-9"></div>
+    <div class="bubble bubble-10"></div>
+    <div class="bubble bubble-11"></div>
+    <div class="bubble bubble-12"></div>
+    <div class="bubble bubble-13"></div>
+    <div class="bubble bubble-14"></div>
+    <div class="bubble bubble-15"></div>
+    <div class="bubble bubble-16"></div>
+    <div class="bubble bubble-17"></div>
+    <div class="bubble bubble-18"></div>
+    <div class="bubble bubble-19"></div>
+    <div class="bubble bubble-20"></div>
+    <div class="bubble bubble-21"></div>
+    <div class="bubble bubble-22"></div>
+    <div class="bubble bubble-23"></div>
+    <div class="bubble bubble-24"></div>
+    <div class="bubble bubble-25"></div>
+    <div class="bubble bubble-26"></div>
+    <div class="bubble bubble-27"></div>
+    <div class="bubble bubble-28"></div>
+    <div class="bubble bubble-29"></div>
+    <div class="bubble bubble-30"></div>
+  </div>
+
+
+<script src="assets/main.js"></script>
 </body>
 </html>
