@@ -350,6 +350,6 @@ function changeCurr() {
 
 showAvailbeConversions();
 resizeTopNav();
-showNav("","menu");
+showNav("","home");
 getLatestRates()
 setTimeout(displayMenuItems, 1000);
